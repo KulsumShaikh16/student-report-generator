@@ -2,7 +2,7 @@ import streamlit as st
 
 st.title("Student Report Generator")
 
-# Grade calculate karne ka function
+# calculate percentage
 def calculate_grade(percentage):
     if percentage >= 80:
         return "A+"
@@ -17,7 +17,7 @@ def calculate_grade(percentage):
     else:
         return "Fail"
 
-# Report card banane ka function
+# Report card
 def generate_report_card(students):
     st.subheader("📝 Student Report Cards 📝")
     for student in students:
@@ -36,7 +36,7 @@ def generate_report_card(students):
         st.write(f"**Grade:** {grade}")
         st.markdown("---")
 
-# Seedha yahan se code chalu hota hai
+# input from user
 students = []
 num_students = st.number_input("How many students?", min_value=1, step=1)
 
