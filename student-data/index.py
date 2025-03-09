@@ -64,6 +64,6 @@ def main():
     else:
         st.warning("No student data entered yet.")
 
-# Run the main function
-if __name__ == "__main__":
-    main()
+# # Run the main function
+# if __name__ == "__main__":
+#     main()
